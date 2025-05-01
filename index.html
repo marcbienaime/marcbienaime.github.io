@@ -68,7 +68,7 @@
     <p>Make it simple. Make it work.</p>
 
     <script>
-        document.getElementById('directive-date').textContent = `Last updated: ${new Date(document.lastModified).toLocaleDateString('en-US', {
+        document.getElementById('directive-date').textContent = new Date(document.lastModified).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
             day: '2-digit'
@@ -82,15 +82,7 @@
       <a href="https://twitter.com/marcbienaime" target="_blank">X</a>
       <a href="https://open.spotify.com/user/1233284565?si=689fe8c6172f4067" target="_blank">Spotify</a>
       <a href="/archive">Archive</a>
-    </div>
-    <div class="last-updated">Last updated: <span id="last-updated"></span></div>
-    <script>
-      document.getElementById('last-updated').textContent = new Date(document.lastModified).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: '2-digit'
-      });
-    </script>
+  
   </footer>
 </body>
 </html>
