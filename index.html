@@ -9,7 +9,7 @@
       font-family: instrument-serif;
       background-color: #fdfdfd;
       color: #111;
-      margin: 0;
+    margin: 0 15%;
       padding: 2rem;
       display: flex;
       flex-direction: column;
@@ -54,16 +54,27 @@
 <body>
   <header>
     <h1>posts//</h1>
-    <p>sporadic updates.</p>
+    <p>sometimes updated.</p>
   </header>
 
-  <main>
+<main>
     <h2>directive</h2>
-    <p>our purpose is to move the world by exchange of work, objects, information, and ideas, 
-        between people assembling as firms, in small and great numbers. Keep it clean and focused.</p>
+    <p id="directive-date" style="font-size: 0.9rem; color: #666;"></p>
+    <p>Our purpose is to compel the world's in perpetual maintenance and progress, by exchange of work, objects, information, and ideas, 
+            between people assembled as firms - some singular, but most in small and great numbers.</p> 
+            
+    <p>Exchange relies on communications, so learn to say what you are trying to say.</p>
+            
+    <p>Make it simple. Make it work.</p>
 
-    <img src="your-image.jpg" alt="Description of image" style="max-width: 100%; height: auto;" />
-  </main>
+    <script>
+        document.getElementById('directive-date').textContent = `Last updated: ${new Date(document.lastModified).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: '2-digit'
+        })}`;
+    </script>
+</main>
 
   <footer>
     <div class="menu">
@@ -83,3 +94,4 @@
   </footer>
 </body>
 </html>
+
