@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name</title>
+  <title>marc</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: instrument-serif;
       background-color: #fdfdfd;
       color: #111;
       margin: 0;
@@ -53,25 +53,33 @@
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>A short bio or welcome message goes here. You can change this anytime.</p>
+    <h1>posts//</h1>
+    <p>sporadic updates.</p>
   </header>
 
   <main>
-    <h2>Section Title</h2>
-    <p>This is a section of content. Add text, images, or links here. Keep it clean and focused.</p>
+    <h2>directive</h2>
+    <p>our purpose is to move the world by exchange of work, objects, information, and ideas, 
+        between people assembling as firms, in small and great numbers. Keep it clean and focused.</p>
 
     <img src="your-image.jpg" alt="Description of image" style="max-width: 100%; height: auto;" />
   </main>
 
   <footer>
     <div class="menu">
-      <a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-      <a href="https://twitter.com/yourhandle" target="_blank">X</a>
-      <a href="https://open.spotify.com/user/yourusername" target="_blank">Spotify</a>
+      <a href="https://www.linkedin.com/in/mbienaime" target="_blank">LinkedIn</a>
+      <a href="https://twitter.com/marcbienaime" target="_blank">X</a>
+      <a href="https://open.spotify.com/user/1233284565?si=689fe8c6172f4067" target="_blank">Spotify</a>
       <a href="/archive">Archive</a>
     </div>
-    <div class="last-updated">Last updated: April 23, 2025</div>
+    <div class="last-updated">Last updated: <span id="last-updated"></span></div>
+    <script>
+      document.getElementById('last-updated').textContent = new Date(document.lastModified).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: '2-digit'
+      });
+    </script>
   </footer>
 </body>
 </html>
